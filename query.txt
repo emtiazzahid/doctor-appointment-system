@@ -1,0 +1,11 @@
+SELECT * FROM slots, doctor_schedules WHERE start_time >= `doctor_schedules`.entry_time AND end_time <=`doctor_schedules`.leave_time AND `doctor_schedules`.doctor_id = 2 AND `doctor_schedules`.day_id = 4 AND `slots`.id NOT IN(6, 10)
+
+
+-- SELECT * FROM slots, doctor_schedules WHERE start_time >= `doctor_schedules`.entry_time AND end_time <=`doctor_schedules`.leave_time AND `doctor_schedules`.doctor_id = 2 AND `doctor_schedules`.day_id = 4
+-- SELECT * FROM doctor_schedules WHERE `doctor_schedules`.doctor_id = 1
+
+SELECT * FROM `doctors`
+
+where doctors.id not in (2, 3, 10);   
+
+-- SELECT * FROM `doctors` WHERE `doctors`.id >1
